@@ -1,9 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.2
+Date: 25.10.2025
+  Bugfixes:
+    - None
+  Changes:
+    - Added IR3 mining particles
+    - Added startup option to add Tin ore and item (no recipes) (default: disabled)
+    - Added startup option to add Gold ore and item (no recipes) (default: disabled)
+---------------------------------------------------------------------------------------------------
 Version: 0.0.1
 Date: 19.10.2025
   Bugfixes:
     - None
   Changes:
-    - None
-  Features:
     - Initial release
