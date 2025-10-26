@@ -40,7 +40,7 @@ local resource = data.raw["resource"]["iron-ore"]
 
 resource.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/iron-ore.png"
 
-resource.minable.mining_particle = "tin-ore-mining-particle"
+resource.minable.mining_particle = "iron-ore-mining-particle"
 
 resource.stage_counts = {
     12000,
