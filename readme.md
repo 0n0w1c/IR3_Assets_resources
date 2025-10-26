@@ -12,8 +12,8 @@ For licensing concerns: [FAQ](https://mods.factorio.com/mod/IR3_Assets_assemblin
 
 See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/IR3_Assets_some_assembly_required)
 
-*Startup setting to add tin ore and item (no recipes)*
-*Startup setting to add gold ore and item (no recipes)*
+*Startup setting to add tin ore and item (no recipes)* (default: disabled)
+*Startup setting to add gold ore and item (no recipes)* (default: disabled)
 
 If the IR3 Assets are not installed, this mod will do nothing.
 
