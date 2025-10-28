@@ -39,7 +39,7 @@ item.pictures = {
     },
 }
 item.subgroup = "raw-resource"
-item.order = "a-b-c"
+item.order = "f[gold-ore]"
 item.stack_size = 50
 item.weight = 20 * kg
 item.inventory_move_sound = item_sounds.resource_inventory_move

@@ -1,4 +1,13 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.0.4
+Date: 28.10.2025
+  Bugfixes:
+    - Improved the icon sort order for gold and tin ores and overall consistency
+    - Added factoriopedia simulations for gold and tin ores
+    - Added recycling recipes for gold and tin ores
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.0.3
 Date: 25.10.2025
   Bugfixes:

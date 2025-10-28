@@ -1,3 +1,5 @@
+require("__base__/prototypes/factoriopedia-util")
+
 local resource_autoplace = require('resource-autoplace');
 
 data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls["gold-ore"] = {}
@@ -11,7 +13,7 @@ data:extend({
         category = "resource",
         name = "gold-ore",
         richness = true,
-        order = "a-b-c"
+        order = "a-h"
     }
 })
 
@@ -54,6 +56,8 @@ data:extend({
 })
 
 local resource = {}
+
+resource.factoriopedia_simulation = { init = make_resource("gold-ore") }
 
 resource.autoplace = resource_autoplace.resource_autoplace_settings {
     name = "gold-ore",

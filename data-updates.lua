@@ -23,15 +23,16 @@ require("prototypes/resource/uranium-ore")
 if settings.startup["IR3-tin-ore"].value == true then
     require("prototypes/resource/tin-ore")
     require("prototypes/item/tin-ore")
+    require("prototypes/recipe/tin-ore-recycling")
 
     if data.raw["autoplace-control"]["tin-ore"] and data.raw["map-gen-presets"] and data.raw["map-gen-presets"].default then
         for _, preset in pairs(data.raw["map-gen-presets"].default) do
             if type(preset) == "table" and
                 preset.basic_settings and
                 preset.basic_settings.autoplace_controls and
-                preset.basic_settings.autoplace_controls["iron-ore"] then
+                preset.basic_settings.autoplace_controls["stone"] then
                 preset.basic_settings.autoplace_controls["tin-ore"] =
-                    preset.basic_settings.autoplace_controls["iron-ore"]
+                    table.deepcopy(preset.basic_settings.autoplace_controls["stone"])
             end
         end
     end
@@ -40,15 +41,16 @@ end
 if settings.startup["IR3-gold-ore"].value == true then
     require("prototypes/resource/gold-ore")
     require("prototypes/item/gold-ore")
+    require("prototypes/recipe/gold-ore-recycling")
 
     if data.raw["autoplace-control"]["gold-ore"] and data.raw["map-gen-presets"] and data.raw["map-gen-presets"].default then
         for _, preset in pairs(data.raw["map-gen-presets"].default) do
             if type(preset) == "table" and
                 preset.basic_settings and
                 preset.basic_settings.autoplace_controls and
-                preset.basic_settings.autoplace_controls["iron-ore"] then
+                preset.basic_settings.autoplace_controls["stone"] then
                 preset.basic_settings.autoplace_controls["gold-ore"] =
-                    preset.basic_settings.autoplace_controls["iron-ore"]
+                    table.deepcopy(preset.basic_settings.autoplace_controls["stone"])
             end
         end
     end
