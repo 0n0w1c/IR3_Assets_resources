@@ -18,7 +18,10 @@ require("prototypes/item/iron-ore")
 require("prototypes/resource/stone")
 require("prototypes/item/stone")
 
-require("prototypes/resource/uranium-ore")
+if settings.startup["IR3-uranium-ore"].value == true then
+    require("prototypes/resource/uranium-ore")
+    require("prototypes/item/uranium-ore")
+end
 
 if settings.startup["IR3-tin-ore"].value == true then
     require("prototypes/resource/tin-ore")
