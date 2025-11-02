@@ -39,12 +39,12 @@ data:extend({
 local URANIUM_TINT = { r = 0.2, g = 0.9, b = 0.2, a = 1 }
 local resource = data.raw["resource"]["uranium-ore"]
 
-resource.icon = nil -- optional, but good practice to clear when switching to `icons`
+resource.icon = nil
 resource.icons = {
     {
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/iron-ore.png",
-        icon_size = 64, -- you MUST include icon_size per layer (or at the top in some versions)
-        tint = URANIUM_TINT,
+        icon_size = 64,
+        tint = { r = 0.5, g = 1, b = 0.5, a = 1 },
     }
 }
 

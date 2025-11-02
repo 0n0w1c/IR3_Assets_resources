@@ -5,7 +5,7 @@ item.icons = {
     {
         icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/iron-ore.png",
         icon_size = 64,
-        tint = URANIUM_TINT,
+        tint = { r = 0.4, g = 1, b = 0.4, a = 1 },
     }
 }
 
