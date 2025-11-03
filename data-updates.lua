@@ -26,7 +26,9 @@ end
 if settings.startup["IR3-tin-ore"].value == true then
     require("prototypes/resource/tin-ore")
     require("prototypes/item/tin-ore")
-    require("prototypes/recipe/tin-ore-recycling")
+    if mods["quality"] then
+        require("prototypes/recipe/tin-ore-recycling")
+    end
 
     if data.raw["autoplace-control"]["tin-ore"] and data.raw["map-gen-presets"] and data.raw["map-gen-presets"].default then
         for _, preset in pairs(data.raw["map-gen-presets"].default) do
@@ -44,7 +46,9 @@ end
 if settings.startup["IR3-gold-ore"].value == true then
     require("prototypes/resource/gold-ore")
     require("prototypes/item/gold-ore")
-    require("prototypes/recipe/gold-ore-recycling")
+    if mods["quality"] then
+        require("prototypes/recipe/gold-ore-recycling")
+    end
 
     if data.raw["autoplace-control"]["gold-ore"] and data.raw["map-gen-presets"] and data.raw["map-gen-presets"].default then
         for _, preset in pairs(data.raw["map-gen-presets"].default) do

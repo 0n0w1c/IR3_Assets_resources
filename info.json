@@ -1,9 +1,9 @@
 {
     "name": "IR3_Assets_resources",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "title": "IR3 Assets: resources",
     "author": "0n0w1c",
-    "description": "Reskins the resources using IR3 graphical assets, if installed.\nRequires the manual installation of IR3 Assets",
+    "description": "Reskins the resources using IR3 graphical assets, if installed.\nRequires the manual installation of the Industrial Revolution 3 Asset Packs.",
     "factorio_version": "2.0",
     "dependencies": [
         "base >= 2.0",
