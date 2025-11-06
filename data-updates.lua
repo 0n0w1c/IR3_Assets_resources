@@ -62,3 +62,16 @@ if settings.startup["IR3-gold-ore"].value == true then
         end
     end
 end
+
+if settings.startup["IR3-natural-gas"].value == true then
+    data:extend({
+        {
+            type = "resource-category",
+            name = "gas",
+        }
+    })
+
+    require("prototypes/sprite/natural-gas-fissure")
+    require("prototypes/resource/natural-gas-fissure")
+    require("prototypes/fluid/natural-gas")
+end

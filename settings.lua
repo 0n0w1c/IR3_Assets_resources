@@ -19,5 +19,12 @@ data:extend({
         setting_type = "startup",
         default_value = false,
         order = "c",
-    }
+    },
+    {
+        type = "bool-setting",
+        name = "IR3-natural-gas",
+        setting_type = "startup",
+        default_value = false,
+        order = "d",
+    },
 })
