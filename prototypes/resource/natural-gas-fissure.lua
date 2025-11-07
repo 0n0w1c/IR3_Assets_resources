@@ -7,23 +7,6 @@ resource_autoplace.initialize_patch_set("natural-gas-fissure", true)
 
 data:extend({
     {
-        type = "autoplace-control",
-        name = "natural-gas-fissure",
-        localised_name = {
-            "",
-            "[fluid=natural-gas] ",
-            {
-                "fluid-name.natural-gas"
-            }
-        },
-        category = "resource",
-        richness = true,
-        order = "a-j"
-    }
-})
-
-data:extend({
-    {
         type = "resource",
         name = "natural-gas-fissure",
 
@@ -74,10 +57,9 @@ data:extend({
         infinite = true,
         infinite_depletion_amount = 10,
         localised_name = {
-            "entity-name.natural-gas-fissure",
-            {
-                "fluid-name.natural-gas-fissure"
-            }
+            "",
+            "[entity=natural-gas-fissure] ",
+            { "entity-name.natural-gas-fissure" },
         },
         map_color = { r = 0.5, g = 0.9, b = 1, a = 1 },
         map_grid = false,
@@ -99,7 +81,7 @@ data:extend({
 
         minimum = 60000,
         normal = 300000,
-        order = "a-j",
+        order = "a-g",
         remove_decoratives = "true",
         resource_patch_search_radius = 12,
         selection_box = {

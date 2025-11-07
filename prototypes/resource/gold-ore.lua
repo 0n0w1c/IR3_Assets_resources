@@ -7,16 +7,6 @@ data.raw["planet"]["nauvis"].map_gen_settings.autoplace_settings.entity.settings
 
 resource_autoplace.initialize_patch_set("gold-ore", true)
 
-data:extend({
-    {
-        type = "autoplace-control",
-        category = "resource",
-        name = "gold-ore",
-        richness = true,
-        order = "a-h"
-    }
-})
-
 local resource = {}
 
 resource.factoriopedia_simulation = { init = make_resource("gold-ore") }
