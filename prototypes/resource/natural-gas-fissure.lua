@@ -56,11 +56,6 @@ data:extend({
         },
         infinite = true,
         infinite_depletion_amount = 10,
-        localised_name = {
-            "",
-            "[entity=natural-gas-fissure] ",
-            { "entity-name.natural-gas-fissure" },
-        },
         map_color = { r = 0.5, g = 0.9, b = 1, a = 1 },
         map_grid = false,
         max_effect_alpha = 1,
