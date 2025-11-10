@@ -9,6 +9,9 @@ resource_autoplace.initialize_patch_set("gold-ore", true)
 
 local resource = {}
 
+resource.type = "resource"
+resource.name = "gold-ore"
+
 resource.factoriopedia_simulation = { init = make_resource("gold-ore") }
 
 resource.autoplace = resource_autoplace.resource_autoplace_settings {
@@ -21,8 +24,6 @@ resource.autoplace = resource_autoplace.resource_autoplace_settings {
     starting_rq_factor_multiplier = 1,
 }
 
-resource.type = "resource"
-resource.name = "gold-ore"
 resource.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/gold-ore.png"
 resource.stage_counts = {
     12000,

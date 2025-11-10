@@ -36,9 +36,6 @@ data:extend({
         },
         effect_animation_period = 4,
         effect_animation_period_deviation = 0.5,
-        flags = {
-            "placeable-neutral"
-        },
         highlight = true,
         icons = {
             {
@@ -77,6 +74,7 @@ data:extend({
         minimum = 60000,
         normal = 300000,
         order = "a-g",
+        flags = { "placeable-neutral" },
         remove_decoratives = "true",
         resource_patch_search_radius = 12,
         selection_box = {
