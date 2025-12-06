@@ -1,19 +1,19 @@
 local resource_autoplace = require('resource-autoplace');
 
-data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls["natural-gas-fissure"] = {}
-data.raw["planet"]["nauvis"].map_gen_settings.autoplace_settings.entity.settings["natural-gas-fissure"] = {}
+data.raw["planet"]["nauvis"].map_gen_settings.autoplace_controls["sour-gas-fissure"] = {}
+data.raw["planet"]["nauvis"].map_gen_settings.autoplace_settings.entity.settings["sour-gas-fissure"] = {}
 
-resource_autoplace.initialize_patch_set("natural-gas-fissure", true)
+resource_autoplace.initialize_patch_set("sour-gas-fissure", true)
 
 data:extend({
     {
         type = "resource",
-        name = "natural-gas-fissure",
+        name = "sour-gas-fissure",
 
         autoplace = resource_autoplace.resource_autoplace_settings(
             {
-                name = "natural-gas-fissure",
-                order = "c-n",
+                name = "sour-gas-fissure",
+                order = "c-s",
                 minimum = 60000,
                 normal = 300000,
                 additional_richness = 220000,
@@ -25,9 +25,9 @@ data:extend({
                 has_starting_area_placement = false,
                 regular_rq_factor_multiplier = 1,
                 probability_expression =
-                "(var('control:natural-gas-fissure:size') > 0) * (clamp(var('default-natural-gas-fissure-patches'), 0, 1)* random_penalty{x = x, y = y, source = 1, amplitude = 1 /0.020833333333333})",
+                "(var('control:sour-gas-fissure:size') > 0) * (clamp(var('default-sour-gas-fissure-patches'), 0, 1)* random_penalty{x = x, y = y, source = 1, amplitude = 1 /0.020833333333333})",
                 richness_expression =
-                "(var('control:natural-gas-fissure:size') > 0) * (1*var('control:natural-gas-fissure:richness')*(var('default-natural-gas-fissure-patches')/0.020833333333333+220000)*max((1000+distance)/2600,1))",
+                "(var('control:sour-gas-fissure:size') > 0) * (1*var('control:sour-gas-fissure:richness')*(var('default-sour-gas-fissure-patches')/0.020833333333333+220000)*max((1000+distance)/2600,1))",
             }),
         category = "gas",
         collision_box = {
@@ -44,7 +44,7 @@ data:extend({
                 icon_size = 64
             },
             {
-                icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/natural-gas.png",
+                icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/sulphur-gas.png",
                 icon_mipmaps = 4,
                 icon_size = 64,
                 scale = 0.25,
@@ -53,7 +53,7 @@ data:extend({
         },
         infinite = true,
         infinite_depletion_amount = 10,
-        map_color = { r = 0.9, g = 0.9, b = 0.9, a = 1 },
+        map_color = { r = 1, g = 1, b = 0, a = 1 },
         map_grid = false,
         max_effect_alpha = 1,
         min_effect_alpha = 0.125,
@@ -62,7 +62,7 @@ data:extend({
             results = {
                 {
                     type = "fluid",
-                    name = "natural-gas",
+                    name = "sour-gas",
                     temperature = 15,
                     amount_min = 10,
                     amount_max = 10,
@@ -113,7 +113,7 @@ data:extend({
                     animation_speed = 0.3,
                     shift = { 0, -2.25 },
                     scale = 1,
-                    tint = { r = 0.2, g = 0.2, b = 0.2, a = 0.1 },
+                    tint = { r = 0.2, g = 0.2, b = 0.1, a = 0.1 },
                 },
             },
             {
@@ -128,7 +128,7 @@ data:extend({
                     animation_speed = 0.3,
                     shift = { 0, -1 },
                     scale = 1,
-                    tint = { r = 0.2, g = 0.2, b = 0.2, a = 0.1 },
+                    tint = { r = 0.2, g = 0.2, b = 0.1, a = 0.1 },
                 }
             }
         }

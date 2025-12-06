@@ -27,4 +27,11 @@ data:extend({
         default_value = false,
         order = "d",
     },
+    {
+        type = "bool-setting",
+        name = "IR3-sour-gas",
+        setting_type = "startup",
+        default_value = false,
+        order = "e",
+    },
 })

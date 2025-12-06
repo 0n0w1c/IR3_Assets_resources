@@ -56,3 +56,22 @@ if settings.startup["IR3-natural-gas"].value == true and not data.raw["fluid"]["
         end
     end
 end
+
+if settings.startup["IR3-sour-gas"].value == true and not data.raw["fluid"]["sour-gas"] then
+    require("prototypes/resource-category/gas")
+    require("prototypes/sprite/sour-gas-fissure")
+
+    require("prototypes/resource/sour-gas-fissure")
+    require("prototypes/fluid/sour-gas")
+
+    require("prototypes/autoplace-control/sour-gas-fissure")
+    for _, preset in pairs(data.raw["map-gen-presets"].default) do
+        if type(preset) == "table" and
+            preset.basic_settings and
+            preset.basic_settings.autoplace_controls and
+            preset.basic_settings.autoplace_controls["crude-oil"] then
+            preset.basic_settings.autoplace_controls["sour-gas-fissure"] =
+                table.deepcopy(preset.basic_settings.autoplace_controls["crude-oil"])
+        end
+    end
+end

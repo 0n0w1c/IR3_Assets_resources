@@ -16,7 +16,9 @@ See the mod [IR3 Assets: Some assembly required](https://mods.factorio.com/mod/I
 *Startup setting to enable tin ore and item (no recipes)* (default: disabled)
 *Startup setting to enable gold ore and item (no recipes)* (default: disabled)
 *Startup setting to enable natural gas fissures and fluid (no recipes)* (default: disabled)
-Natural gas has a fuel value of 0.4MJ, can be used with the gas generator.  
+*Startup setting to enable sour gas fissures and fluid (no recipes)* (default: disabled)
+
+Note: Natural gas has a fuel value of 0.4MJ and can be used with a gas generator.  
 
 If the IR3 Assets are not installed, this mod will do nothing.
 
