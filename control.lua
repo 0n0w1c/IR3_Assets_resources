@@ -1,3 +1,16 @@
+local ir3_asset_packs = {
+    "IndustrialRevolution3Assets1",
+    "IndustrialRevolution3Assets2",
+    "IndustrialRevolution3Assets3",
+    "IndustrialRevolution3Assets4"
+}
+
+for _, asset_pack in ipairs(ir3_asset_packs) do
+    if not script.active_mods[asset_pack] then
+        return
+    end
+end
+
 local RESOURCES = { "tin-ore", "gold-ore", "natural-gas-fissure" }
 
 local function update_surface(surface)

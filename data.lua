@@ -1,3 +1,11 @@
+if not (mods["IndustrialRevolution3Assets1"]
+        and mods["IndustrialRevolution3Assets2"]
+        and mods["IndustrialRevolution3Assets3"]
+        and mods["IndustrialRevolution3Assets4"]
+    ) then
+    return
+end
+
 if settings.startup["IR3-tin-ore"].value == true and not data.raw["item"]["tin-ore"] then
     require("prototypes/resource/tin-ore")
     require("prototypes/item/tin-ore")

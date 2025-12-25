@@ -1,3 +1,11 @@
+if not (mods["IndustrialRevolution3Assets1"]
+        and mods["IndustrialRevolution3Assets2"]
+        and mods["IndustrialRevolution3Assets3"]
+        and mods["IndustrialRevolution3Assets4"]
+    ) then
+    return
+end
+
 if mods["quality"] then
     local resources = { "coal", "copper-ore", "gold-ore", "iron-ore", "stone", "tin-ore" }
 
