@@ -15,13 +15,13 @@ resource.name = "tin-ore"
 resource.factoriopedia_simulation = { init = make_resource("tin-ore") }
 
 resource.autoplace = resource_autoplace.resource_autoplace_settings {
-    name = "tin-ore",
+    name = resource.name,
     order = "a-b-b",
-    base_density = 1,
-    base_spots_per_km2 = 1,
+    base_density = 4,
+    base_spots_per_km2 = 2.5,
     has_starting_area_placement = true,
-    regular_rq_factor_multiplier = 1,
-    starting_rq_factor_multiplier = 1,
+    regular_rq_factor_multiplier = 1.0,
+    starting_rq_factor_multiplier = 1.1,
 }
 
 resource.icon = "__IndustrialRevolution3Assets1__/graphics/icons/64/tin-ore.png"
