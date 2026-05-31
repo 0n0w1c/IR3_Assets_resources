@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.4
+Date: 31.05.2026
+  Bugfixes:
+    - Only update the Nauvis map generation settings when enabling resources on existing saves
+    - Added a migration to remove custom resource autoplace settings from non-Nauvis surfaces
+  Changes:
+    - None
+---------------------------------------------------------------------------------------------------
 Version: 0.3.3
 Date: 28.03.2026
   Bugfixes:

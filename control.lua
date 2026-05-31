@@ -11,7 +11,7 @@ for _, asset_pack in ipairs(ir3_asset_packs) do
     end
 end
 
-local RESOURCES = { "tin-ore", "gold-ore", "natural-gas-fissure" }
+local RESOURCES = { "tin-ore", "gold-ore", "natural-gas-fissure", "sour-gas-fissure" }
 
 local function update_surface(surface)
     local map_gen_settings = surface.map_gen_settings
@@ -41,10 +41,9 @@ local function update_surface(surface)
     surface.map_gen_settings = map_gen_settings
 end
 
-local function update_all_surfaces()
-    for _, surface in pairs(game.surfaces) do
-        if surface.planet then update_surface(surface) end
-    end
+local function update_nauvis_surface()
+    local surface = game.surfaces["nauvis"]
+    if surface then update_surface(surface) end
 end
 
-script.on_configuration_changed(update_all_surfaces)
+script.on_configuration_changed(update_nauvis_surface)
